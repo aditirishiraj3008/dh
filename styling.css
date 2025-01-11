@@ -141,6 +141,16 @@ header{
     box-shadow: 0 -20px 30px rgba(194, 194, 194, 0.3);
 }
 
+.content-pages_team{
+    z-index: 10;
+    padding: 5vh;
+    margin-top: 15vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    position: relative;
+    box-shadow: 0 -20px 30px rgba(194, 194, 194, 0.3);
+}
+
 aside{
     position: sticky; 
     top: 20vh;
@@ -206,6 +216,65 @@ p{
     margin-bottom: 3vh;
 }
 
+.team_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.team{
+    background-color: rgb(195, 194, 194);;
+    display: flex;
+    margin: 2vh 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.members1{
+    background-color: rgb(230, 230, 230);
+    height: max-content;
+    width: 60vw;
+    padding: 10vh;
+    border-radius: 3vh;
+    right: 0;
+    margin-left: 0vw;
+}
+
+.subsystem1{
+    background-color: rgb(230, 230, 230);
+    height: 30vh;
+    width: 30vh;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.members2{
+    background-color: rgb(230, 230, 230);
+    height: max-content;
+    width: 60vw;
+    padding: 10vh;
+    border-radius: 3vh;
+    right: 0;
+    margin-left: 0vw;
+}
+
+.subsystem2{
+    background-color: rgb(230, 230, 230);
+    height: 30vh;
+    width: 30vh;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 footer {
     text-align: center;
     background-color: rgb(195, 194, 194); 
@@ -247,5 +316,40 @@ footer {
 
     .content {
         margin-left: 0;
+    }
+
+    .team_page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 3vh 2vw;
+    }
+
+    .team {
+        flex-direction: column;
+    }
+
+    .members1, .members2 {
+        width: 80vw;
+        padding: 6vh 4vw;
+        margin-bottom: 2vh;
+    }
+
+    .subsystem1, .subsystem2 {
+        height: 20vh;
+        width: 20vh;
+        margin-bottom: 2vh; /* Ensure space between the circle and the team member */
+    }
+
+    /* Stack the circles above the members */
+    .team {
+        flex-direction: column;
+    }
+
+    .subsystem1, .subsystem2 {
+        order: -1;  /* Ensure the circles appear above the members */
     }
 }
