@@ -341,15 +341,14 @@ footer {
     .subsystem1, .subsystem2 {
         height: 20vh;
         width: 20vh;
-        margin-bottom: 2vh; /* Ensure space between the circle and the team member */
+        margin-bottom: 2vh; 
     }
 
-    /* Stack the circles above the members */
     .team {
         flex-direction: column;
     }
 
     .subsystem1, .subsystem2 {
-        order: -1;  /* Ensure the circles appear above the members */
+        order: -1; 
     }
 }
