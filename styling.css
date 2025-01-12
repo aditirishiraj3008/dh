@@ -216,6 +216,10 @@ p{
     margin-bottom: 3vh;
 }
 
+.subsections_attribution{
+    display: flex;
+}
+
 .team_page{
     display: flex;
     flex-direction: column;
