@@ -10,10 +10,21 @@ html {
 
 body{
     padding-top: 10vh;
+    color: #222222;
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.content_bg{
+    background-image: url("images/sand.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .navbar{
-    background-color: rgb(195, 194, 194);
+    background-color: #222222;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,12 +39,12 @@ body{
 }
 
 .navbar a {
-    color: black;
+    color: #cab087;
     text-decoration: none;
 }
 
 .navbar a:hover{
-
+    color: #ffc054;
 }
 
 .navbar i{
@@ -49,20 +60,21 @@ body{
 .nav_links a{
     display: block;
     margin: 0.5vh 1vh;
-    padding: 1vw 1vw;
-    background-color: rgb(230,230,230);
-    color: black;
+    padding: 1vw 0.25vw;
+    background-color: #2c2c2c;
+    color: #fff4e3;
     text-decoration: none;
     border-radius: 2.5vh;
     width: max-content;
-    width: 9rem;
+    width: 9.5rem;
     text-align: center;
     transition: background-color 0.2s;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+    font-size: small;
 }
 
 .nav_links a:hover{
-    box-shadow: 1px 1px 5px rgb(154, 154, 154);
-    font-weight: bold;
+    color: #ffc054;
 }
 
 .menu-toggle {
@@ -73,6 +85,7 @@ body{
     background: none;  
     border: none;  
     box-shadow: none;
+    color: #cab087;
 }
 
 .dropdowns{
@@ -87,8 +100,8 @@ body{
     top: 100%;
     left: 0;
     border-radius: 1vw;
-    background-color: rgb(230, 230, 230);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    background-color: #2c2c2c;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); 
     opacity: 0;
     transform: translateY(-10px);
     transition: transform 0.3s ease-in-out;
@@ -99,6 +112,7 @@ body{
     display: block;
     text-decoration: none;
     text-align: left;
+    box-shadow: none;
 }
 
 .dropdowns:hover .dropdown_contents{
@@ -108,8 +122,7 @@ body{
 }
 
 .dropdown_contents a:hover{
-    font-weight: bold;
-    box-shadow: none;
+
 }
 
 .heading{
@@ -128,17 +141,25 @@ body{
 }
 
 header{
-    font-size: x-large;
+    font-size: 4vw;
+    font-family: 'Exo';
+    font-weight: bolder;
+    text-shadow: 0px 2px 5px #665b48;
+    padding-top: 20vh;
 }
 
 .content-pages{
     z-index: 10;
     padding: 5vh;
     margin-top: 15vh;
-    background-color: rgb(255, 255, 255);
+    padding-top: 15vh;
     display: flex;
     position: relative;
-    box-shadow: 0 -20px 30px rgba(194, 194, 194, 0.3);
+    background-image: url("images/sand.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: 0 -20px 30px rgba(0, 0, 0, 0.3);
 }
 
 .content-pages_team{
@@ -157,15 +178,18 @@ aside{
     width: max-content;
     height: max-content;
     left: 1vw;
-    background-color: rgb(195, 194, 194);
+    background-color:#f0ddc0;
     padding: 2vh 4vh;
     border-radius: 2vh;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 2px -4px 10px rgba(0, 0, 0, 0.2);
 }
 
 aside h3{
-    color: #000;
+    color: #222222;
     margin-bottom: 1vh;
+    font-family: 'Exo';
+    text-shadow: 2px 1px 2px #b0a083;
+    font-weight: bold;
 }
 
 aside ul li{
@@ -176,11 +200,11 @@ aside ul li{
 aside ul li a{
     text-decoration: none;
     padding: 3vh;
-    color: black;
+    color: #222222;
 }
 
 aside ul li a:hover{
-    font-weight: bold;
+    color: #99825b;
 }
 
 .menu-toggle i {
@@ -199,21 +223,34 @@ aside.active {
     padding: 5vh;
     margin-left: 25vh ;
     position: relative;
-    background-color: rgb(195, 194, 194);
+    background-color: #f0ddc0;
     transition: margin-left 0.3s ease-in-out;
+    box-shadow: 2px -4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .content h2{
-    color: #000;
+    color: #222222;
     margin-bottom: 4vh;
+    font-family: 'Exo';
+    text-shadow: 2px 1px 2px #b0a083;
+    font-weight: bold;
 }
 
 p{
     margin: 1.5vh;
     padding: 2.5vh;
-    background-color: rgb(230, 230, 230);
+    background-color: #fff4e3;
     border-radius: 1.5vh;
     margin-bottom: 3vh;
+}
+
+.lists{
+    margin: 1.5vh;
+    padding: 2.5vh;
+    background-color: #fff4e3;
+    border-radius: 1.5vh;
+    margin-bottom: 3vh;
+    padding-left: 5vh;
 }
 
 .subsections_attribution{
@@ -281,16 +318,17 @@ p{
 
 footer {
     text-align: center;
-    background-color: rgb(195, 194, 194); 
+    background-color: #222222; 
     padding: 2.5vh;
+    color: #fff4e3;
 }
 
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
         z-index: 100;
-        background-color: rgb(195, 194, 194);
-        border-color:  rgb(195, 194, 194);
+        background-color: #222222;
+        border-color:  #222222;
         padding: 10px;
         border-radius: 50%;
         cursor: pointer;
@@ -302,7 +340,7 @@ footer {
         left: 0;
         width: 100%;
         height: 100vh;
-        background-color: rgb(195, 194, 194);
+        background-color: #222222;
         flex-direction: column;
         justify-content: center;
         align-items: center;
