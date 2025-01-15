@@ -121,8 +121,30 @@ body{
     visibility: visible;
 }
 
-.dropdown_contents a:hover{
+.title{
+    position: sticky;
+    align-content: space-around;
+    box-sizing: border-box;
+    z-index: 1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    top: 0;
+    height: 85vh;
+    padding: 0;
+    margin-top: 10vh;
+    margin-left: -60vw;
+}
 
+.home_content{
+    z-index: 10;
+    padding: 5vh;
+    margin-top: 15vh;
+    padding-top: 15vh;
+    display: flex;
+    position: relative;
+    box-shadow: 0 -20px 30px rgba(0, 0, 0, 0.3);
 }
 
 .heading{
@@ -253,6 +275,51 @@ p{
     padding-left: 5vh;
 }
 
+.hp{
+    min-width: 60vw;
+    max-width: 60vw;
+    margin: auto;
+}
+
+.hp1{
+    display: flex;
+    margin: 1.5vh;
+    padding: 2.5vh;
+    background-color: #fff4e3;
+    border-radius: 1.5vh;
+    margin-bottom: 3vh;
+    margin-left: -10vw;
+}
+
+.hp2{
+    display: flex;
+    margin: 1.5vh;
+    padding: 2.5vh;
+    background-color: #fff4e3;
+    border-radius: 1.5vh;
+    margin-bottom: 3vh;
+    margin-right: 10vw;
+}
+
+.time1{
+    background-color: #ffc054;
+    padding: 4vh;
+    border-radius: 1vh;
+    align-content: center;
+}
+
+.time2{
+    background-color: #ffc054;
+    padding: 4vh;
+    border-radius: 1vh;
+    align-content: center;
+    margin-right: -10vw;
+}
+
+.hp1 p{
+    align-content: center;
+}
+
 .subsections_attribution{
     display: flex;
 }
@@ -267,15 +334,17 @@ p{
 }
 
 .team{
-    background-color: rgb(195, 194, 194);;
+    background-color: #f0ddc0;
     display: flex;
     margin: 2vh 0;
     justify-content: center;
     align-items: center;
+    padding: 1.5vw;
+    border-radius: 1vw;
 }
 
 .members1{
-    background-color: rgb(230, 230, 230);
+    background-color: #fff4e3;
     height: max-content;
     width: 60vw;
     padding: 10vh;
@@ -285,7 +354,7 @@ p{
 }
 
 .subsystem1{
-    background-color: rgb(230, 230, 230);
+    background-color: #fff4e3;
     height: 30vh;
     width: 30vh;
     align-items: center;
@@ -296,7 +365,7 @@ p{
 }
 
 .members2{
-    background-color: rgb(230, 230, 230);
+    background-color: #fff4e3;
     height: max-content;
     width: 60vw;
     padding: 10vh;
@@ -306,7 +375,7 @@ p{
 }
 
 .subsystem2{
-    background-color: rgb(230, 230, 230);
+    background-color: #fff4e3;
     height: 30vh;
     width: 30vh;
     align-items: center;
