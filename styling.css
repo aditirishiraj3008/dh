@@ -275,51 +275,6 @@ p{
     padding-left: 5vh;
 }
 
-.hp{
-    min-width: 60vw;
-    max-width: 60vw;
-    margin: auto;
-}
-
-.hp1{
-    display: flex;
-    margin: 1.5vh;
-    padding: 2.5vh;
-    background-color: #fff4e3;
-    border-radius: 1.5vh;
-    margin-bottom: 3vh;
-    margin-left: -10vw;
-}
-
-.hp2{
-    display: flex;
-    margin: 1.5vh;
-    padding: 2.5vh;
-    background-color: #fff4e3;
-    border-radius: 1.5vh;
-    margin-bottom: 3vh;
-    margin-right: 10vw;
-}
-
-.time1{
-    background-color: #ffc054;
-    padding: 4vh;
-    border-radius: 1vh;
-    align-content: center;
-}
-
-.time2{
-    background-color: #ffc054;
-    padding: 4vh;
-    border-radius: 1vh;
-    align-content: center;
-    margin-right: -10vw;
-}
-
-.hp1 p{
-    align-content: center;
-}
-
 .subsections_attribution{
     display: flex;
 }
@@ -341,6 +296,21 @@ p{
     align-items: center;
     padding: 1.5vw;
     border-radius: 1vw;
+}
+
+.image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.team_pics{
+  display: inline;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 
 .members1{
