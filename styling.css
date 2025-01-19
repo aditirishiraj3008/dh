@@ -14,6 +14,7 @@ body{
     font-family: 'Poppins';
     font-weight: normal;
     font-size: 14px;
+    padding-bottom: 0;
 }
 
 .content_bg{
@@ -140,12 +141,12 @@ body{
 
 .home_content{
     z-index: 10;
-    padding: 5vh;
+    padding: 10vh;
     margin-top: 15vh;
     padding-top: 15vh;
-    display: flex;
     position: relative;
     box-shadow: 0 -20px 30px rgba(0, 0, 0, 0.3);
+    background-color: #2c2c2c;
 }
 
 .heading{
@@ -158,9 +159,95 @@ body{
     align-items: center;
     text-align: center;
     top: 0;
-    height: 85vh;
+    height: 100vh;
     padding: 0;
     margin-top: -10vh;
+    background-image: url("images/sand.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.home_text1{
+    background-color: #fff4e3;
+    text-align: center;
+    text-shadow: none;
+    padding: 2vh;
+    border-radius: 2vw;
+    height: 30vh;
+    width: 100%;
+    font-family: 'Exo';
+    font-size: 24px;
+    align-content: center;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+    border: 1vw solid #f0ddc0;
+}
+
+.home_text2{
+    margin-top: 5vh;
+    width: 100%;
+    padding: 5vh;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15vh;
+}
+
+.home_text2 h2{
+    padding: 5vh;
+    border-radius: 2vw;
+    text-shadow: none;
+    padding: 5vh;
+    width: 55vw;
+    font-family: 'Exo';
+    font-size: 22px;
+    color: #fff4e3;
+    align-content: center;
+}
+
+.home_text2 img{
+    height: 300px;
+    border: 1vw solid #222222;
+    margin-left: 2vh;
+}
+
+.home_text3{
+    background-image: url("images/sea_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    margin: -10vh;
+    padding: 10vh;
+    font-family: 'Exo';
+    color: #222222;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home_text3 h2{
+    padding: 20vh;
+}
+
+.home_text4{
+    background-color: #2c2c2c;
+    margin: -10vh;
+    padding: 20vh;
+    color: #fff4e3;
+    font-family: 'Exo';
+    height: 90vh;
+    font-size: 22px;
+}
+
+.home_text5{
+    background-color: #fff4e3;
+    border: 2vw solid #f0ddc0;
+    border-radius: 2vh;
+    padding: 4vh;
+    width: 50vw;
+    text-align: center;
+    margin: 5vh 20vw;
 }
 
 header{
@@ -424,7 +511,6 @@ p{
     position: absolute;
     display: flex;
     justify-content: center;
-    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.4);
 }
 
 .t1{
@@ -555,8 +641,10 @@ footer {
     padding: 2.5vh;
     color: #fff4e3;
     height: 50px;
-    z-index: 15;
+    z-index: 100;
     width: 100%;
+    position: relative;
+    bottom: 0;
 }
 
 @media (max-width: 768px) {
