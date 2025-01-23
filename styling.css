@@ -10,11 +10,32 @@ html {
 
 body{
     padding-top: 10vh;
-    color: #222222;
     font-family: 'Poppins';
     font-weight: normal;
     font-size: 14px;
-    padding-bottom: 0;
+    bottom: 0;
+}
+
+*::-webkit-scrollbar {
+    width: 10px; 
+}
+  
+ *::-webkit-scrollbar-track {
+    background-color: #f0ddc0; 
+}
+  
+*::-webkit-scrollbar-thumb {
+    background-color: #2c2c2c;
+    border-radius: 5px; 
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #474747; 
+}
+
+::selection {
+    color: #fffdfa;
+    background: #ffc054;
 }
 
 .content_bg{
@@ -145,7 +166,7 @@ body{
     color: #222222;
     position: relative;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out, color 0.1s ease-in-out;
 }
 
 .char:hover {
@@ -252,28 +273,15 @@ body{
     padding: 20vh;
     color: #fff4e3;
     font-family: 'Exo';
-    height: 90vh;
+    height: fit-content;
     font-size: 22px;
 }
 
 .home_text5{
-    background-color: #f0ddc0;
-    border-radius: 5vw;
-    padding: 4vh;
-    width: 50vw;
+    color: #ffc054;
     text-align: center;
-    margin: 5vh 20vw;
-    transition: background-color 0.3s ease;
-}
-
-.home_text5 h1 a{
-    color: #222222;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.home_text5:hover{
-    background-color: #ffc054;
+    font-family: 'Exo';
+    font-size: 20px;
 }
 
 .home_text6{
@@ -291,13 +299,11 @@ body{
 }
 
 .home_text7{
-    background-color: #2c2c2c;
     margin: -10vh;
     padding: 20vh;
     color: #fff4e3;
     font-family: 'Exo';
     height: fit-content;
-    width: 70%;
     font-size: 24px;
     font-weight: 800;
 }
@@ -333,6 +339,7 @@ header{
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
+    justify-items: center;
 }
 
 .timeline_attributions{
@@ -508,11 +515,15 @@ p{
 .timeline_title{
     text-align: center;
     font-family: 'Exo';
-    color: #2c2c2c;
+    color: #2b2823;
     font-weight: 900;
     font-size: 26px;
-    text-shadow: 0px 1px 1px #000000;
     margin-bottom: 7vh;
+    background-color: #fff4e3;
+    border: 1vh solid #f0ddc0; 
+    padding: 1vw;
+    border-radius: 2vh; 
+    width: 20vw;
 }
 
 .slides {
@@ -591,7 +602,6 @@ p{
     text-align: center;
     align-content: center;
     border: 3vw solid #f0ddc0;
-    opacity: 1;
 }
 
 .slide .t2 p{
@@ -734,6 +744,7 @@ footer {
 
     .content {
         margin-left: 0;
+        padding: 2vh;
     }
 
     .team_page {
@@ -748,6 +759,7 @@ footer {
 
     .team {
         flex-direction: column;
+        width: 80%; 
     }
 
     .members1, .members2 {
@@ -769,4 +781,39 @@ footer {
     .subsystem1, .subsystem2 {
         order: -1; 
     }
+
+    .home_text1, .home_text2 h2, .home_text3 h2, .home_text4, .home_text6 {
+        font-size: 16px;
+    }
+
+    header{
+        font-size: 22px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    .lists{
+        font-size: 12px;
+    }
+
+    .home_text2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home_text6{
+        padding: 10vw;
+    }
+
+    .home_text7{
+        font-size: 16px;
+    }
+
+    .home_text5{
+        font-size: 16px;
+    }
+
 }
