@@ -264,7 +264,8 @@ body{
 }
 
 .home_text3 h2{
-    padding: 20vh;
+    height: fit-content;
+    padding-top: 20vh;
 }
 
 .home_text4{
@@ -436,7 +437,7 @@ aside.active {
     transform: translateX(0);
 }
 
-.content{
+.content, .content_attr{
     padding: 5vh;
     margin-left: 25vh;
     position: relative;
@@ -445,7 +446,7 @@ aside.active {
     box-shadow: 2px -4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.content h2{
+.content h2, .content_attr h2{
     color: #222222;
     margin-bottom: 4vh;
     font-family: 'Exo';
@@ -591,7 +592,7 @@ p{
     color: #fff4e3;
     font-weight: bold;
     font-size: 24px;
-    text-shadow: 3px 3px 3px #000000;
+    text-shadow: 0px 2px 3px #000000;
 }
 
 .slide .t1 p{
@@ -782,10 +783,6 @@ footer {
         order: -1; 
     }
 
-    .home_text1, .home_text2 h2, .home_text3 h2, .home_text4, .home_text6 {
-        font-size: 16px;
-    }
-
     header{
         font-size: 22px;
     }
@@ -804,16 +801,20 @@ footer {
         text-align: center;
     }
 
+    .home_text1, .home_text2, .home_text3, .home_text4, .home_text5, .home_text6, .home_text7{
+        font-size: 14px;
+    }
+
+    .home_text2 img{
+        margin-left: 0;
+    }
+
+    .home_text3 h2{
+        padding-top: -10vw;
+    }
+
     .home_text6{
         padding: 10vw;
-    }
-
-    .home_text7{
-        font-size: 16px;
-    }
-
-    .home_text5{
-        font-size: 16px;
     }
 
 }
