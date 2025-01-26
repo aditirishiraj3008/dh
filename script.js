@@ -1,3 +1,18 @@
+//homepage contents
+const observeContent = () => {
+  const contents = document.querySelectorAll(".content");
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+          }
+      });
+  }, { threshold: 0.5 });
+
+  contents.forEach(content => observer.observe(content));
+};
+document.addEventListener("DOMContentLoaded", observeContent);
+
 // Navbar Toggle
 const navbarToggle = document.querySelector(".menu-toggle");
 const navbarMenu = document.querySelector(".nav_links");

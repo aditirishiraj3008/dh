@@ -14,23 +14,26 @@ body{
     font-weight: normal;
     font-size: 14px;
     bottom: 0;
+    overflow-x: hidden;
 }
 
+
+
 *::-webkit-scrollbar {
-    width: 10px; 
+    width: 12px; 
 }
   
  *::-webkit-scrollbar-track {
-    background-color: #f0ddc0; 
+    background-color: #9c7250; 
 }
   
 *::-webkit-scrollbar-thumb {
-    background-color: #2c2c2c;
-    border-radius: 5px; 
+    background-color: #1b1b1b;
+    border-radius: 2px; 
 }
 
 *::-webkit-scrollbar-thumb:hover {
-    background-color: #474747; 
+    background-color: #000000; 
 }
 
 ::selection {
@@ -82,12 +85,12 @@ body{
 
 .nav_links a{
     display: block;
-    margin: 0.5vh 1vh;
-    padding: 1vw 0.25vw;
+    margin: 1.5vh 1vh;
+    padding: 0.9vw 0.25vw;
     background-color: #2c2c2c;
     color: #fff4e3;
     text-decoration: none;
-    border-radius: 2.5vh;
+    border-radius: 1.5vh;
     width: max-content;
     width: 9.5rem;
     text-align: center;
@@ -149,6 +152,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    
 }
 
 .word {
@@ -279,34 +283,59 @@ body{
 }
 
 .home_text5{
-    color: #ffc054;
+    color: #222222;
     text-align: center;
     font-family: 'Exo';
     font-size: 20px;
-}
-
-.home_text6{
     margin: 10vh -10vh;
     padding: 30vh;
     display: flex;
     height: fit-content;
-    font-family: 'Exo';
-    font-size: 18px;
     background-image: url("images/sand.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    font-weight: 800;
 }
 
-.home_text7{
-    margin: -10vh;
-    padding: 20vh;
-    color: #fff4e3;
+.solution{
+    text-align: center;
+    color: #ffc054;
     font-family: 'Exo';
-    height: fit-content;
-    font-size: 24px;
-    font-weight: 800;
+    font-size: 30px;
+}
+
+.solution_links{
+    margin: 0 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: inherit;
+    justify-content: space-around;
+}
+
+.solution_links a{
+    display: flex;
+    display: block;
+    background-color: #222222;
+    padding: 10vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    width: 20vw;
+    border: 0.1vh solid #f0ddc0;
+    border-radius: 2vh;
+    color: #f0ddc0;
+    text-decoration: none;
+    margin: 2vw;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+}
+
+.solution_links a:hover{
+    border: 0.1vh solid #ffc054;
+    color: #ffc054;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+    opacity: 1;
 }
 
 header{
@@ -393,7 +422,7 @@ header{
 aside{
     position: sticky; 
     top: 20vh;
-    width: max-content;
+    width: fit-content;
     height: max-content;
     left: 1vw;
     background-color:#f0ddc0;
@@ -408,6 +437,7 @@ aside h3{
     font-family: 'Exo';
     text-shadow: 2px 1px 2px #b0a083;
     font-weight: bold;
+    width: fit-content;
 }
 
 aside ul li{
@@ -416,8 +446,9 @@ aside ul li{
 }
 
 aside ul li a{
+    display: block;
     text-decoration: none;
-    padding: 3vh;
+    padding: 1vh;
     color: #222222;
 }
 
@@ -598,21 +629,21 @@ p{
 .slide .t1 p{
     border-radius: 5vh;
     background-color: #fff4e3;
-    height: 50vh;
-    width: 50vh;
+    height: 40vh;
+    width: 40vh;
     text-align: center;
     align-content: center;
-    border: 3vw solid #f0ddc0;
+    border: 1.5vw solid #f0ddc0;
 }
 
 .slide .t2 p{
     border-radius: 5vh;
     background-color: #fff4e3;
-    height: 50vh;
-    width: 50vh;
+    height: 40vh;
+    width: 40vh;
     text-align: center;
     align-content: center;
-    border: 3vw solid #f0ddc0;
+    border: 1.5vw solid #f0ddc0;
     opacity: 1;
 }
 
@@ -632,7 +663,7 @@ p{
 .team{
     background-color: #f0ddc0;
     display: flex;
-    margin: 2vh 0;
+    margin: 2vh;
     justify-content: center;
     align-items: center;
     padding: 1.5vw;
@@ -695,7 +726,7 @@ p{
     text-align: center;
     font-family: 'Exo';
     font-size: large;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 footer {
@@ -801,7 +832,7 @@ footer {
         text-align: center;
     }
 
-    .home_text1, .home_text2, .home_text3, .home_text4, .home_text5, .home_text6, .home_text7{
+    .home_text1, .home_text2, .home_text3, .home_text4, .home_text5{
         font-size: 14px;
     }
 
@@ -813,7 +844,7 @@ footer {
         padding-top: -10vw;
     }
 
-    .home_text6{
+    .home_text5{
         padding: 10vw;
     }
 
